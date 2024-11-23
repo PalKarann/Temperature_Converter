@@ -14,7 +14,7 @@ function convertTemperature() {
         result = (temperature - 32) * 5/9;
         result = `${result.toFixed(1)} <sup>°C</sup>`;
     } else {
-        result = `${temperature.toFixed(1)} °${convertTo.charAt(0)}`;
+        result = `${temperature.toFixed(1)} ${convertTo.charAt(0)}`;
     }
 
     return document.getElementById("result").innerHTML = `<div>${result}</div>`;
